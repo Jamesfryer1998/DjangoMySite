@@ -1,5 +1,6 @@
 TODO:
 - Add a chat between users feature - https://www.geeksforgeeks.org/realtime-chat-app-using-django/ 
+- Direct chat - https://django-messages.readthedocs.io/en/latest/ 
 
 FIXME:
 - Websocket not connecting
