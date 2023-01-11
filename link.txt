@@ -1,0 +1,25 @@
+TODO:
+- Add a chat between users feature - https://www.geeksforgeeks.org/realtime-chat-app-using-django/ 
+
+FIXME:
+- Websocket not connecting
+- search the error
+- Errors can be seen in the inspect element
+
+Webite_link:
+localhost:8000/projects - projects
+localhost:8000/blog - blog
+localhost:8000/admin - admin page
+
+Part 1:
+https://realpython.com/get-started-with-django-1/
+
+Part 2:
+https://realpython.com/django-user-management/
+
+Part 3:
+https://realpython.com/django-view-authorization/
+
+Admin login:
+user - jfryer
+pass - Django123

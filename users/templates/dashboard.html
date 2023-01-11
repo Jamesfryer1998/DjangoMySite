@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+
+<style>
+.container {text-align: center;}
+</style>
+
+<div>
+    <h1 center>Awesome Website by J.F</h1>
+    <br>
+    {% if user.username %}
+        <h2> Welcome back {{ user.username|default:'Guest' }}.</h2>
+        <div>
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">Logout </a>
+                <a href="{% url 'password_change' %}">| Change password</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>
+            {% endif %}
+            <br>
+            <p>Check out your projects, blog entries and edit your account details in the nav bar.</p>
+        </div>
+
+    {% elif not user.username %}
+        <h2>Please Login.</h2>
+        <br>
+        <a href="{% url 'login' %}"
+        class="btn btn-primary">
+        Login
+        </a>
+
+    {% endif %}
+</div>
+
+{% endblock %}
