@@ -2,7 +2,14 @@
 {% block page_content %}
 <div class="col-md-8 offset-md-2">
     <h1>Blog Home</h1>
+    {% if user.username == 'jfryer' %}
+    <center><a href="http://localhost:8000/admin/blog/post/add//"
+    class="btn btn-primary">
+    Add Post
+    </a></center>
+    {% endif %}
     <hr>
+
     {% for post in posts %}
     <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
     <small>

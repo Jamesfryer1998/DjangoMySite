@@ -9,10 +9,12 @@ h1 {text-align: center;}
 
 <h1>Current Projects</h1>
 
+{% if user.username == 'jfryer' %}
 <center><a href="http://localhost:8000/admin/projects/project/add/"
     class="btn btn-primary">
     Add Project
 </a></center>
+{% endif %}
 
 <br>
 <div class="row">

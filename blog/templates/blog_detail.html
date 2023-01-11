@@ -12,6 +12,10 @@
         {% endfor %}
     </small>
     <p>{{ post.body | linebreaks }}</p>
+    <a href="http://localhost:8000/admin/blog/post/"
+    class="btn btn-primary">
+    Edit Post
+    </a>
     <h3>Leave a comment:</h3>
     <form action="/blog/{{ post.pk }}/" method="post">
         {% csrf_token %}

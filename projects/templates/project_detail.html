@@ -20,11 +20,12 @@
         GitHub
         </a>
         <br><br><br><br><br><br><br>
-        
+        {% if user.username == 'jfryer' %}
         <a href="http://localhost:8000/admin/projects/project/"
             class="btn btn-primary">
             Edit Project
         </a>
+        {% endif %}
     </a>
     </div>
 </div>
