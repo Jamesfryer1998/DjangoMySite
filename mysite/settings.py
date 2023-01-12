@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'users',
-    'chat.apps.ChatConfig',
+    'chat',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,11 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projects',
     'blog',
-    'channels'
+    'channels',
 ]
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
-ASGI_APPLICATION = 'ChatApp.asgi.application'
+ASGI_APPLICATION = 'mysite.asgi.application'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
